@@ -10,6 +10,8 @@ def run(x_target):
 
     X = np.linspace(1, 100, 100)
 
+    # tf.reset_default_graph()
+
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
         for x in X:
